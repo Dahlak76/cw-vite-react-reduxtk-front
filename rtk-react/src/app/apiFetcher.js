@@ -28,7 +28,7 @@ export const apiSlice = createSlice({
 export const fetchData = (payload) => async (dispatch) => {
   try {
     dispatch(setLoading());
-    const { data } = await axios.post('http://localhost:3006/transform', payload);
+    const { data } = await axios.post('http://3.133.160.173/transform', payload);
     console.log('response data:', data);
     dispatch(setResponse(data.transformedPayload));
   } catch (error) {
