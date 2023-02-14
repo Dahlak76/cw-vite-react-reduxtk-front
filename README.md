@@ -15,7 +15,7 @@ store.js: This file is the central store of the entire app, where the redux stat
 
 All styling done using Tailwind CSS.    
 
-This is the highlighted code from the apiFetcher.js file  
+``` This is the highlighted code from the apiFetcher.js file  
 
 import { createSlice } from '@reduxjs/toolkit';  
 import axios from 'axios';  
@@ -62,5 +62,5 @@ export const fetchData = (payload) => async (dispatch) => {
 export const { setResponse, setLoading, setError } = apiSlice.actions;  
 
 //export the entire reducer   
-export default apiSlice.reducer;  
+export default apiSlice.reducer;  ```   
   
